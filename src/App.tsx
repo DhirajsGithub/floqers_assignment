@@ -1,6 +1,6 @@
 import { Button, ConfigProvider, Switch, theme } from "antd";
 import "./App.css";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useContext, useState } from "react";
 import { generalContext } from "./provider/authContext";
 function App() {
@@ -22,10 +22,12 @@ function App() {
           padding: "20px",
           backgroundColor: ctx?.isDark ? "#141414" : "#f3f3f3",
           height: "100vh",
-          width: "100%",
+          overflow: "scroll",
+          minWidth: "800px"
         }}
       >
-        <div style={{ width: "100%", display: "flex", justifyContent: "flex-end" }}>
+        <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }}>
+          <Link to="/"> <Button type="link">Home</Button> </Link>
           <Switch onChange={handleClick} />
         </div>
         <Outlet />

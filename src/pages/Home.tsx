@@ -4,9 +4,9 @@ import rowData from "../utils/csvjson";
 
 import { InitialValue, filterDataType } from "../utils/types";
 import ChartComp from "./ChartComp";
-import { Tabs } from "antd";
+import { Tabs, Typography } from "antd";
 const { TabPane } = Tabs;
-
+const { Title } = Typography
 
 
 
@@ -46,7 +46,8 @@ const Home: React.FC = () => {
     useEffect(() => {
         filterDataFunc();
     }, []);
-    return <div style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
+    return <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <Title level={2}>5 years of for jobs and salary</Title>
         <Tabs centered>
             <TabPane tab="Table View" key="1">
                 <Maintable filterData={filterData} />

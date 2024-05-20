@@ -19,3 +19,13 @@ export type InitialValue = {
 export type FilterDataProps = {
     filterData :filterDataType[];
 }
+
+export type detailViewDataType={
+    key: React.Key;
+    jobTitle: string;
+    noOfJobs: number;
+}
+
+export type TableDetailProps={
+    requiredData: detailViewDataType[]
+}
