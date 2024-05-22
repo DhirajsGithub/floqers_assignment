@@ -46,7 +46,7 @@ const Home: React.FC = () => {
     useEffect(() => {
         filterDataFunc();
     }, []);
-    return <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    return <div >
         <Title level={2}>5 years of for jobs and salary</Title>
         <Tabs centered>
             <TabPane tab="Table View" key="1">

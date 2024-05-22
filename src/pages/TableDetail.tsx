@@ -29,7 +29,6 @@ const TableDetail: React.FC<TableDetailProps> = ({ requiredData }) => {
     ];
     return (
         <Table
-            style={{ width: "800px" }}
             scroll={{ x: 800 }}
             columns={columns}
             dataSource={requiredData}

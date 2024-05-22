@@ -22,8 +22,9 @@ function App() {
           padding: "20px",
           backgroundColor: ctx?.isDark ? "#141414" : "#f3f3f3",
           height: "100vh",
-          overflow: "scroll",
-          minWidth: "800px"
+          // width: "100vw",
+          overflowX: "scroll",
+
         }}
       >
         <div style={{ width: "100%", display: "flex", justifyContent: "space-between" }}>

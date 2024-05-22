@@ -44,7 +44,7 @@ const Maintable: React.FC<FilterDataProps> = ({ filterData }) => {
     const handleOnRowCick = (record: filterDataType, rowIndex: number) => {
         navigate("/detailView/" + record.year)
     }
-    return <Table style={{ width: "800px" }} scroll={{ x: 800 }} onRow={(record: filterDataType, rowIndex: number) => {
+    return <Table scroll={{ x: 800 }} onRow={(record: filterDataType, rowIndex: number) => {
         return {
             onClick: () => { handleOnRowCick(record, rowIndex) }, // click row
         };

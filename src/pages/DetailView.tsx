@@ -38,7 +38,7 @@ const DetailView: React.FC = () => {
     }, [])
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div>
             <Title level={2}>{year} data for jobs and there frequency</Title>
             <Tabs centered>
                 <TabPane tab="Table View" key="1">
